@@ -14,9 +14,7 @@ exports = module.exports = function (req, res) {
   var searchTerm = req.query.term
   var searchCategory = req.query.category
 
-
   view.query('publications', keystone.list('Publication').model.find())
-
 
   var pageData = {
     loginRedirect: '/eresources',
