@@ -47,6 +47,14 @@ exports = module.exports = function (app) {
 	app.get('/exhibit/:exhibit', routes.views.exhibit);
 	app.get('/gallery', routes.views.gallery);
 
+	//Admin Routes
+	app.get('/admin/posts', routes.admin.posts);
+	app.get('/admin/posts-categories', routes.admin.posts-categories);
+	app.get('/admin/contents', routes.admin.contents);
+	app.get('/admin/pages', routes.admin.pages);
+	app.get('/admin/users', routes.admin.users);
+	app.get('/admin', routes.admin.admin)
+
 	// User
 
 
