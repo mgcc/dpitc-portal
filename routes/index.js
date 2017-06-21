@@ -48,15 +48,15 @@ exports = module.exports = function (app) {
 	app.get('/gallery', routes.views.gallery);
 
 	//Admin Routes
-	app.get('/admin/posts', routes.admin.posts);
-	app.get('/admin/posts_categories', routes.admin.posts_categories);
-	app.get('/admin/contents_fiesta', routes.admin.contents_fiesta);
-	app.get('/admin/technologies', routes.admin.technologies);
-	app.get('/admin/sliders', routes.admin.sliders);
-	app.get('/admin/pages', routes.admin.pages);
-	app.get('/admin/base_pages', routes.admin.base_pages);
-	app.get('/admin/users', routes.admin.users);
-	app.get('/admin', routes.admin.admin);
+	// app.get('/admin/posts', routes.admin.posts);
+	// app.get('/admin/posts_categories', routes.admin.posts_categories);
+	// app.get('/admin/contents_fiesta', routes.admin.contents_fiesta);
+	// app.get('/admin/technologies', routes.admin.technologies);
+	// app.get('/admin/sliders', routes.admin.sliders);
+	// app.get('/admin/pages', routes.admin.pages);
+	// app.get('/admin/base_pages', routes.admin.base_pages);
+	// app.get('/admin/users', routes.admin.users);
+	// app.get('/admin', routes.admin.admin);
 
 	//Signup Route
 	app.get('/signup', routes.views.signup);
