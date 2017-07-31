@@ -7,8 +7,12 @@ block content
         .row
           .col-md-12
             h3 Publication Feedback Report
-          .col-md-12
-            //- h4 Filter publications
+          //- .col-md-12
+            form.navbar-form.navbar-left(role='search')
+              .form-group
+                input.form-control(type='text', placeholder='Search')
+              button.btn.btn-default(type='submit',style='margin-bottom:1px;')
+                i.glyphicon.glyphicon-search
 
           .col-md-12
             ul.list-group

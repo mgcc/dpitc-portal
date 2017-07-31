@@ -1,6 +1,7 @@
 var keystone = require('keystone');
 var Downloads = keystone.list('PublicationDownload');
 
+// Get all downloads, all of it, all publications since the beginning of time
 exports.getAllDownloads = function(req, res) {
   var pubID = req.query.pubID;
 
@@ -15,7 +16,7 @@ exports.getAllDownloads = function(req, res) {
     });
 }
 
-// get non-unique downloads for the current month
+// get non-unique downloads for all publications for the current month
 exports.getDownloadsCurrentMonth = function(req, res) {
   var now = new Date();
 
@@ -32,19 +33,18 @@ exports.getDownloadsCurrentMonth = function(req, res) {
   });
 }
 
+// Get all downloads, all publications, in a certain range
 exports.getDownloadsByRange = function(req, res) {
   var start = req.query.start;
   var end = req.query.end;
 
   if (start && end) {
-
     Feedback.model.find()
   } else {
     res.send({})
   }
 }
 
-// getDownloadsThisMonth
 // getDownloadsByRange
 // getDownloadsByPublication
 // getDownloadsByPublicationAndRange

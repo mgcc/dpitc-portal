@@ -30,7 +30,6 @@ exports = module.exports = function(req, res) {
     return res.redirect(url);
   });
 
-
   view.query('publications', keystone.list('publications').model.find({}).populate('publicationLine'));
 
   view.render('eresources/analytics/reports/feedback');
