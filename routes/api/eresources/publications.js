@@ -52,11 +52,7 @@ exports.downloadPublication = function(req, res) {
     Publication.model.findOne({_id: pubID})
       .exec(function(err, result) {
         var filename = getNiceFilename(result.title, result.file.filename);
-
-        res.header("Content-Disposition", "attachment;filename=" + filename);
-        res.set('Content-Type', 'application/octet-stream');
-
-        res.send(result.file.url);
+        res.download(result.file.path + '/' + result.file.filename, filename);
       });
 
   } else {
