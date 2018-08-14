@@ -218,13 +218,13 @@ exports = module.exports = function (app) {
 	// app.all('/contact', routes.views.contact);
 
 	//Community
-	app.get('/community', routes.communityViews.community);
-	app.get('/community/blogs', routes.communityViews.blog);
-	app.get('/community/blogs/:category?', routes.communityViews.blog);
-	app.get('/community/blogs/post/:post', routes.communityViews.post);
-	app.get('/community/discussions', routes.communityViews.discussionList);
-	app.get('/community/discussions/:category?', routes.communityViews.discussionList);
-	app.get('/community/analytics', middleware.requireAdmin, routes.communityViews.analytics);
+	//app.get('/community', routes.communityViews.community);
+	//app.get('/community/blogs', routes.communityViews.blog);
+	//app.get('/community/blogs/:category?', routes.communityViews.blog);
+	//app.get('/community/blogs/post/:post', routes.communityViews.post);
+	//app.get('/community/discussions', routes.communityViews.discussionList);
+	//app.get('/community/discussions/:category?', routes.communityViews.discussionList);
+	//app.get('/community/analytics', middleware.requireAdmin, routes.communityViews.analytics);
 
   //E Resources
   app.get('/eresources', routes.eresourcesViews.eresources);

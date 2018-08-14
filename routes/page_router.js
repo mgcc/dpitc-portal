@@ -16,11 +16,11 @@ exports = module.exports = function(req, res) {
 	q.exec(function(err, results){
 		if (!results) {
 			// return res.status(404).send('Page Not Found!');
-			res.status(404).render('errors/404');
+			return res.status(404).render('errors/404');
 		}
 		locals.page = results;
-		console.log(results.constructor.view_name);
-		if(results.constructor.view_name) {
+		//console.log(results.constructor.view_name);
+		if(results.constructor && results.constructor.view_name) {
 			return routes.views[results.constructor.view_name](req, res);
 		} else {
 			return routes.views.standard_page(req, res);
