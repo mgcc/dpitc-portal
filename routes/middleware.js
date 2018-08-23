@@ -19,12 +19,12 @@ var keystone = require('keystone');
 */
 exports.initLocals = function (req, res, next) {
 	// NavLinks = keystone.list('NavLink');
-	res.locals.navLinks = 
+	res.locals.navLinks =
 	[
 		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'FIESTA', key: 'fiesta', href: 'http://128.199.166.120:3000' },
+		{ label: 'FIESTA', key: 'fiesta', href: 'http://139.59.125.198/fiesta' },
 		{ label: 'Technology', key: 'tech', href: 'http://139.59.125.198/technology' },
-		{ label: 'Community', key: 'community', href: '/community' },
+		{ label: 'Community', key: 'community', href: 'https://community.dpitc.net/' },
 		{ label: 'eResources', key: 'eresources', href: '/eresources' },
 		// { label: 'Home', key: 'home', href: '/' },
 		// { label: 'Blog', key: 'blog', href: '/blog' },
@@ -33,7 +33,7 @@ exports.initLocals = function (req, res, next) {
 	];
 	res.locals.user = req.user;
 	// res.locals.logo = keystone.list('Settings').model.findOne({key: 'dpitc'});
-	
+
 	keystone.list('Settings').model.findOne({key: 'dpitc'}).exec(function (err, result) {
 		res.locals.settings = result;
 		// console.log(result);
