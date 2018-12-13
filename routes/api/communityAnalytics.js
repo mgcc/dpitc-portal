@@ -6,7 +6,7 @@ var GroupView = keystone.list('GroupView');
 var EventView = keystone.list('EventView');
 var ReportView = keystone.list('ReportView');
 
-var host = 'https://community.dpitc.net/';
+var host = 'https://community.dpitc.ph/';
 // var host = 'http://localhost:8080';
 config = {
   getEvents: host+'/api/posts/category/event',

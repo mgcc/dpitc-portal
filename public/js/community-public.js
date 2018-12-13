@@ -134,7 +134,7 @@ $(document).ready(function() {
     });
 
     $('.avatar-img').each(function(item) {
-      var host = 'https://community.dpitc.net/'
+      var host = 'https://community.dpitc.ph/'
       var id = $(this).attr('data-auth');
       var user = {};
 

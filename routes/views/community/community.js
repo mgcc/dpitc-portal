@@ -18,7 +18,7 @@ exports = module.exports = function (req, res) {
     industries: [],
     posts: []
   };
-  locals.host = 'https://community.dpitc.net';
+  locals.host = 'https://community.dpitc.ph';
   // locals.host = 'https://localhost:8080';
   locals.config = {
     listPost: locals.host+'/api/posts',
