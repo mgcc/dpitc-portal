@@ -22,9 +22,9 @@ exports.initLocals = function (req, res, next) {
 	res.locals.navLinks =
 	[
 		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'FIESTA', key: 'fiesta', href: 'https://fiesta.dpitc.ph/fiesta' },
-		{ label: 'Technology', key: 'tech', href: 'https://fiesta.dpitc.ph/technologyco' },
-		{ label: 'Community', key: 'community', href: 'https://community.dpitc.ph/' },
+		{ label: 'FIESTA', key: 'fiesta', href: 'http://fiesta.dpitc.ph/fiesta' },
+		{ label: 'Technology', key: 'tech', href: 'http://fiesta.dpitc.ph/technology' },
+		{ label: 'Community', key: 'community', href: 'http://community.dpitc.ph/' },
 		{ label: 'eResources', key: 'eresources', href: '/eresources' },
 		// { label: 'Home', key: 'home', href: '/' },
 		// { label: 'Blog', key: 'blog', href: '/blog' },
