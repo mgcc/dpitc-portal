@@ -25,7 +25,7 @@ block content
 							div(class="container")
 								if image.caption
 									div(class="carousel-caption")
-										a(href='/blog/post/' + image.slug).news-link 
+										a(href='/blog/post/' + image.slug).news-link
 											!= image.caption
 										//- i.fa.fa-newspaper-o.fa-fw
 									//- if image.buttonText != ""
@@ -37,21 +37,21 @@ block content
 							div(class="container")
 								if image.caption
 									div(class="carousel-caption")
-										a(href='/blog/post/' + image.slug).news-link 
+										a(href='/blog/post/' + image.slug).news-link
 											!= image.caption
 								//- a(class="btn btn-primary more-news" href="blog") Click Here For More News
 
 
 	#fiesta_block.fh5co-project-style-3.container
 		.row(style="margin-bottom:1em").blue-black-seperator
-			.section-title.focus.row 
+			.section-title.focus.row
 				.title.col-md-5.col-xs-4
 					.skew.col-xs-12
 					.skewed-text #{settings.fiestaTitle}
 			.col-md-12.no-padding
-				strong(style="color:black") 
+				strong(style="color:black")
 					!= settings.fiestaDescription
-				
+
 		.row
 			each exhibit in fiesta
 				.col-md-2.col-sm-6.col-xs-6.col-xxs-12.tech-item
@@ -68,12 +68,12 @@ block content
 	#fiesta_block.fh5co-project-style-3
 		.container.no-padding
 			.row(style="margin-bottom:1em").blue-black-seperator
-				.section-title.focus.row 
+				.section-title.focus.row
 					.title.col-md-5.col-xs-4
 						.skew.col-xs-12
 						.skewed-text #{settings.technologyTitle}
 				.col-md-12.no-padding
-					strong(style="color:black") 
+					strong(style="color:black")
 						!= settings.technologyDescription
 		.container.no-padding
 			.row
@@ -95,12 +95,12 @@ block content
 	#block
 		.container.no-padding
 			.row(style="margin-bottom:2em").blue-black-seperator
-				.section-title.focus.row 
+				.section-title.focus.row
 					.title.col-md-5.col-xs-4
 						.skew.col-xs-12
 						.skewed-text #{settings.communityTitle}
 				.col-md-12.no-padding
-					strong(style="color:black") 
+					strong(style="color:black")
 						!= settings.communityDescription
 				.col-md-12.no-padding
 					img.img-responsive(src=settings.communityBanner.secure_url)
@@ -123,6 +123,7 @@ block content
 										img(src=settings.aboutBanner.secure_url, class="img-responsive" )
 								.col-md-6.col-sm-12.description
 									!= settings.aboutDescription
-									
+
+								if settings.aboutButtonText
 									a(target='_blank', href=settings.aboutLink, class="pull-right btn btn-primary")
 										span.button #{settings.aboutButtonText}
